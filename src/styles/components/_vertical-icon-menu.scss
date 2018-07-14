@@ -1,0 +1,40 @@
+.vimenu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	list-style-type: none;
+	background: $bg-color--secondary;
+	margin: 0;
+	padding: 0;
+
+	@media screen and (max-height: 34.9375em) {
+		font-size: 70%;
+	}
+
+	li:first-child a {
+		background: $bg-color--primary;
+		color: $bg-invert-color--primary;
+	}
+
+	&__item {
+		display: inline-block;
+		position: relative;
+		text-indent: -500em;
+		height: 5em;
+		width: 5em;
+		color: $icon-color;
+		border-bottom: 1px solid $border-color;
+		line-height: 5em;
+		text-align: center;
+
+		&:hover {
+			background: $bg-color--primary;
+			color: $bg-invert-color--primary;
+		}
+	}
+
+	&--current a {
+		background: $bg-invert-color--primary;
+		color: $bg-color--primary;
+	}
+}

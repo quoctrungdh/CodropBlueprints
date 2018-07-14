@@ -1,0 +1,42 @@
+.icon {
+	&:before {
+		font-family: 'ecoico';
+		font-size: 1.4rem;
+		position: absolute;
+		text-indent: 0em;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	&--C:before {
+		content: "T";
+		font-size: 300%;
+		font-family: 'Lato', Calibri, Arial, sans-serif;
+	}
+
+	&--search:before {
+		content: "\e004";
+	}
+
+	&--archive:before {
+		content: "\e005";
+	}
+
+	&--download:before {
+		content: "\e006";
+	}
+
+	&--location:before {
+		content: "\e007";
+	}
+
+	&--images:before {
+		content: "\e008";
+	}
+
+	&--pencil:before {
+		content: "\e009";
+	}
+}
